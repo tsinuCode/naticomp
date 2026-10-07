@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NATI COMPUTER — Premier technology partner in Dire Dawa, Ethiopia. High-performance gaming rigs, enterprise workstations, laptops, accessories, and expert IT support." />
+  <title>NATI COMPUTER | Technology For What's Next</title>
+  
+  <!-- Modern Typography: Syne & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="/src/css/main.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- ================================================================= -->
+  <!-- NAVIGATION HEADER                                                 -->
+  <!-- ================================================================= -->
+  <header class="nav-header" id="nav">
+    <nav class="nav container" aria-label="Main navigation">
+      <!-- Brand Logo with 3D Stylized Monogram N -->
+      <a href="#hero" class="nav__logo" aria-label="NATI COMPUTER Home">
+        <span class="nav__logo-icon">
+          <svg width="34" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logo-grad-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="50%" stop-color="#0284c7" />
+                <stop offset="100%" stop-color="#0369a1" />
+              </linearGradient>
+              <linearGradient id="logo-grad-accent" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#0ea5e9" />
+                <stop offset="100%" stop-color="#7dd3fc" />
+              </linearGradient>
+              <filter id="logo-glow" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0ea5e9" flood-opacity="0.5"/>
+              </filter>
+            </defs>
+            <rect width="36" height="36" rx="9" fill="#0b1329" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1.2"/>
+            <path d="M9 27V9L21 27V9" stroke="url(#logo-grad-primary)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#logo-glow)"/>
+            <path d="M15 9L27 27" stroke="url(#logo-grad-accent)" stroke-width="3.5" stroke-linecap="round" />
+          </svg>
+        </span>
+        <div class="nav__logo-text">
+          <span class="nav__logo-brand">NATI</span>
+          <span class="nav__logo-sub">COMPUTER</span>
+        </div>
+      </a>
+
+      <!-- Center Links -->
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#hero" class="is-active">Home</a></li>
+        <li><a href="#portal" id="nav-link-portal">Portal</a></li>
+        <li><a href="#categories">Overview</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Nati</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Right Actions: Search, Cart, Phone, Contact Us -->
+      <div class="nav__actions">
+        <!-- Search Button -->
+        <button class="nav__icon-btn" id="search-toggle" aria-label="Open search modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Cart Button with Badge -->
+        <button class="nav__icon-btn js-cart-toggle" aria-label="Open shopping cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="nav__cart-badge" id="cart-badge">0</span>
+        </button>
+
+        <!-- Phone Pill -->
+        <a href="tel:+251911000000" class="nav__phone-pill" aria-label="Call +251 911 000 000">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>+251 911 000 000</span>
+        </a>
+
+        <!-- Primary Contact Us Button -->
+        <a href="#contact" class="btn btn--cyan-glow">Contact Us</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="nav__hamburger" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- ================================================================= -->
+    <!-- CONTINUOUS CINEMATIC HERO (Single Pinned GSAP ScrollTrigger)      -->
+    <!-- Contains Hero Intro + All 5 Portal Animations (screen_2 -> 6)    -->
+    <!-- ================================================================= -->
+    <section class="hero" id="hero" aria-label="Continuous Cinematic Experience">
+      <div class="hero__sticky">
+        <!-- Ambient Atmospheric Layers -->
+        <div class="hero__bg-grid" aria-hidden="true"></div>
+        <div class="hero__ambient-glow" aria-hidden="true"></div>
+
+        <!-- High-Performance Unified Canvas for Screen 2 -> 6 -->
+        <canvas id="hero-cinematic-canvas" class="hero__cinematic-canvas" aria-label="Continuous interactive cinematic portal sequence"></canvas>
+        <div class="hero__vignette" aria-hidden="true"></div>
+
+        <!-- Dynamic HUD Badge Updating Across Sequences -->
+        <div class="hero__hud-badge" id="hero-hud-badge" aria-hidden="true">
+          <span class="hero__hud-index" id="hero-hud-index">01</span>
+          <div class="hero__hud-text">
+            <span class="hero__hud-title" id="hero-hud-title">GAMING RIG</span>
+            <span class="hero__hud-sub" id="hero-hud-sub">PORTAL ARRIVAL</span>
+          </div>
+          <div class="hero__hud-track">
+            <div class="hero__hud-bar" id="hero-hud-progress"></div>
+          </div>
+        </div>
+
+        <!-- Initial Hero State Content (Fades out smoothly on scroll) -->
+        <div class="container hero__inner">
+          <!-- Text Column (Left) -->
+          <div class="hero__text-col">
+            <div class="hero__location-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>DIRE DAWA, ETHIOPIA</span>
+            </div>
+
+            <h1 class="hero__title-heading">
+              <span class="hero__title-brand">NATI COMPUTER</span>
+              <span class="hero__title-gradient">TECHNOLOGY FOR<br/>WHAT'S NEXT.</span>
+            </h1>
+
+            <p class="hero__sub-text">
+              Premium computers, laptops and technology solutions in Dire Dawa.
+            </p>
+
+            <div class="hero__cta-group">
+              <a href="#products" class="btn btn--primary btn--pill">
+                <span>EXPLORE PRODUCTS</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#contact" class="btn btn--outline btn--pill">CONTACT US</a>
+            </div>
+
+            <!-- Animated Mouse Scroll Indicator -->
+            <div class="hero__scroll-indicator" id="hero-scroll-hint">
+              <div class="mouse-icon">
+                <span class="mouse-wheel"></span>
+              </div>
+              <span class="mouse-label">SCROLL DOWN</span>
+            </div>
+          </div>
+
+          <!-- Hero Visual Setup Card (Right) -->
+          <div class="hero__visual-col">
+            <div class="hero__setup-card">
+              <img 
+                src="/assets/hero_setup.jpg" 
+                alt="High-performance custom liquid-cooled PC with curved monitor setup" 
+                class="hero__setup-img"
+                loading="eager"
+              />
+              <div class="hero__setup-glow" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 4 FEATURE CARDS (Immediately following cinematic sequence)       -->
+    <!-- ================================================================= -->
+    <section class="section features-section" id="features">
+      <div class="container">
+        <div class="features-grid">
+          <!-- Feature 1: Premium Products -->
+          <div class="feature-card reveal">
+            <div class="feature-card__icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Premium Products</h3>
+            <p class="feature-card__desc">Top brands and latest technology.</p>
+          </div>
+
+          <!-- Feature 2: Expert Support -->
+          <div class="feature-card reveal" data-delay="1">
+            <div class="feature-card__icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Expert Support</h3>
+            <p class="feature-card__desc">Professional advice and service.</p>
+          </div>
+
+          <!-- Feature 3: Local Presence -->
+          <div class="feature-card reveal" data-delay="2">
+            <div class="feature-card__icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Local Presence</h3>
+            <p class="feature-card__desc">Your trusted technology partner in Dire Dawa.</p>
+          </div>
+
+          <!-- Feature 4: Better Together -->
+          <div class="feature-card reveal" data-delay="3">
+            <div class="feature-card__icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Better Together</h3>
+            <p class="feature-card__desc">Technology for a brighter future.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- PRODUCT CATEGORIES SECTION (7 Cards)                             -->
+    <!-- ================================================================= -->
+    <section class="section categories-section" id="categories">
+      <div class="container">
+        <header class="section__header section__header--row reveal">
+          <div>
+            <span class="section__eyebrow">PRODUCT CATEGORIES</span>
+            <h2 class="section__title">BUILT FOR <span class="text-cyan">WHAT'S NEXT.</span></h2>
+          </div>
+          <a href="#products" class="section__link-action">
+            <span>View All Products</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </header>
+
+        <div class="categories-grid">
+          <!-- 1. Computers -->
+          <a href="#products" class="category-card reveal">
+            <div class="category-card__visual">
+              <img src="/assets/dell_optiplex.jpg" alt="Business Workstations and Desktop Computers" loading="lazy" />
+            </div>
+            <div class="category-card__body">
+              <h3 class="category-card__title">Computers</h3>
+              <div class="category-card__meta">
+                <span class="category-card__count">12+ Products</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- 2. Laptops -->
+          <a href="#products" class="category-card reveal" data-delay="1">
+            <div class="category-card__visual">
+              <img src="/assets/laptop.png" alt="Ultrabooks and High-Performance Laptops" loading="lazy" />
+            </div>
+            <div class="category-card__body">
+              <h3 class="category-card__title">Laptops</h3>
+              <div class="category-card__meta">
+                <span class="category-card__count">16+ Products</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- 3. Gaming -->
+          <a href="#products" class="category-card reveal" data-delay="2">
+            <div class="category-card__visual">
+              <img src="/assets/gaming.png" alt="Custom High-FPS Liquid-Cooled Gaming Rigs" loading="lazy" />
+            </div>
+            <div class="category-card__body">
+              <h3 class="category-card__title">Gaming</h3>
+              <div class="category-card__meta">
+                <span class="category-card__count">10+ Products</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- 4. Monitors -->
+          <a href="#products" class="category-card reveal" data-delay="3">
+            <div class="category-card__visual">
+              <img src="/assets/samsung_odyssey.jpg" alt="Curved and High-Refresh Gaming Displays" loading="lazy" />
+            </div>
+            <div class="category-card__body">
+              <h3 class="category-card__title">Monitors</h3>
+              <div class="category-card__meta">
+                <span class="category-card__count">8+ Products</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- 5. Accessories -->
+          <a href="#products" class="category-card reveal">
+            <div class="category-card__visual">
+              <img src="/assets/accessories.jpg" alt="Precision Peripherals, Mechanical Keyboards and Headsets" loading="lazy" />
+            </div>
+            <div class="category-card__body">
+              <h3 class="category-card__title">Accessories</h3>
+              <div class="category-card__meta">
+                <span class="category-card__count">8+ Products</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- 6. Networking -->
+          <a href="#products" class="category-card reveal" data-delay="1">
+            <div class="category-card__visual">
+              <img src="/assets/tplink_router.jpg" alt="Enterprise Mesh Wi-Fi 6 Routers and Switches" loading="lazy" />
+            </div>
+            <div class="category-card__body">
+              <h3 class="category-card__title">Networking</h3>
+              <div class="category-card__meta">
+                <span class="category-card__count">7+ Products</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- 7. Printers -->
+          <a href="#products" class="category-card reveal" data-delay="2">
+            <div class="category-card__visual">
+              <div class="category-card__printer-fallback">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="url(#logo-grad-primary)" stroke-width="1.5">
+                  <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+                </svg>
+              </div>
+            </div>
+            <div class="category-card__body">
+              <h3 class="category-card__title">Printers</h3>
+              <div class="category-card__meta">
+                <span class="category-card__count">6+ Products</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- BEST SELLERS SECTION (5 Cards)                                    -->
+    <!-- ================================================================= -->
+    <section class="section products-section" id="products">
+      <div class="container">
+        <header class="section__header section__header--row reveal">
+          <div>
+            <span class="section__eyebrow">FEATURED PRODUCTS</span>
+            <h2 class="section__title">BEST <span class="text-cyan">SELLERS</span></h2>
+            <p class="section__subtitle">Top technology products selected for your needs.</p>
+          </div>
+          <a href="#products" class="section__link-action">
+            <span>View All Products</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </header>
+
+        <div class="products-grid-5">
+          <!-- Product 1: Dell OptiPlex 7010 -->
+          <article class="product-card reveal">
+            <div class="product-card__thumb">
+              <span class="product-badge product-badge--violet">Best Seller</span>
+              <img src="/assets/dell_optiplex.jpg" alt="Dell OptiPlex 7010 Business Workstation" loading="lazy" />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Dell OptiPlex 7010</h3>
+              <div class="product-card__category">Desktop · Business</div>
+              <div class="product-card__specs">i5 12th Gen | 8GB | 256GB SSD</div>
+              <div class="product-card__price">ETB 42,500</div>
+              <div class="product-card__actions">
+                <button class="btn btn--card-view js-quick-view" data-product-id="optiplex-7010">View Product</button>
+                <button class="btn btn--card-cart js-add-to-cart" data-product-id="optiplex-7010" aria-label="Add Dell OptiPlex to cart">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2: HP Pavilion 15 -->
+          <article class="product-card reveal" data-delay="1">
+            <div class="product-card__thumb">
+              <span class="product-badge product-badge--cyan">New</span>
+              <img src="/assets/hp_pavilion.jpg" alt="HP Pavilion 15 Ultrabook Laptop" loading="lazy" />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">HP Pavilion 15</h3>
+              <div class="product-card__category">Laptop · Productivity</div>
+              <div class="product-card__specs">i5 13th Gen | 8GB | 512GB SSD</div>
+              <div class="product-card__price">ETB 62,000</div>
+              <div class="product-card__actions">
+                <button class="btn btn--card-view js-quick-view" data-product-id="pavilion-15">View Product</button>
+                <button class="btn btn--card-cart js-add-to-cart" data-product-id="pavilion-15" aria-label="Add HP Pavilion to cart">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3: ASUS ROG Strix G16 -->
+          <article class="product-card reveal" data-delay="2">
+            <div class="product-card__thumb">
+              <span class="product-badge product-badge--violet">Popular</span>
+              <img src="/assets/asus_rog_strix.jpg" alt="ASUS ROG Strix G16 High-FPS Gaming Laptop" loading="lazy" />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">ASUS ROG Strix G16</h3>
+              <div class="product-card__category">Gaming Laptop</div>
+              <div class="product-card__specs">i7 13th Gen | 16GB | 1TB SSD</div>
+              <div class="product-card__price">ETB 78,600</div>
+              <div class="product-card__actions">
+                <button class="btn btn--card-view js-quick-view" data-product-id="rog-strix-g16">View Product</button>
+                <button class="btn btn--card-cart js-add-to-cart" data-product-id="rog-strix-g16" aria-label="Add ASUS ROG to cart">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4: Samsung Odyssey G5 -->
+          <article class="product-card reveal" data-delay="3">
+            <div class="product-card__thumb">
+              <span class="product-badge product-badge--cyan">Curved</span>
+              <img src="/assets/samsung_odyssey.jpg" alt="Samsung Odyssey G5 Curved Gaming Display" loading="lazy" />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Samsung Odyssey G5</h3>
+              <div class="product-card__category">Monitor · 27"</div>
+              <div class="product-card__specs">165Hz | 1ms | FHD</div>
+              <div class="product-card__price">ETB 24,500</div>
+              <div class="product-card__actions">
+                <button class="btn btn--card-view js-quick-view" data-product-id="odyssey-g5">View Product</button>
+                <button class="btn btn--card-cart js-add-to-cart" data-product-id="odyssey-g5" aria-label="Add Samsung Odyssey to cart">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 5: TP-Link Archer AX3000 -->
+          <article class="product-card reveal" data-delay="4">
+            <div class="product-card__thumb">
+              <span class="product-badge product-badge--cyan">Wi-Fi 6</span>
+              <img src="/assets/tplink_router.jpg" alt="TP-Link Archer AX3000 Dual-Band Router" loading="lazy" />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">TP-Link Archer AX3000</h3>
+              <div class="product-card__category">Router · Networking</div>
+              <div class="product-card__specs">Wi-Fi 6 | Dual Band</div>
+              <div class="product-card__price">ETB 8,500</div>
+              <div class="product-card__actions">
+                <button class="btn btn--card-view js-quick-view" data-product-id="archer-ax3000">View Product</button>
+                <button class="btn btn--card-cart js-add-to-cart" data-product-id="archer-ax3000" aria-label="Add TP-Link Archer to cart">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- BRAND SHOWCASE BANNER (The Best Brands / The Latest Technology)   -->
+    <!-- ================================================================= -->
+    <section class="section brands-section" id="brands">
+      <div class="container">
+        <div class="brand-banner reveal">
+          <div class="brand-banner__cyber-graphic" aria-hidden="true">
+            <div class="brand-banner__glow-cone"></div>
+            <div class="brand-banner__vr-silhouette">
+              <svg width="180" height="180" viewBox="0 0 200 200" fill="none">
+                <circle cx="100" cy="100" r="85" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1.5" stroke-dasharray="4,4"/>
+                <circle cx="100" cy="100" r="70" stroke="rgba(14, 165, 233, 0.4)" stroke-width="2"/>
+                <path d="M60 95C60 85 75 75 100 75C125 75 140 85 140 95C140 108 125 115 100 115C75 115 60 108 60 95Z" fill="#0c1836" stroke="#38bdf8" stroke-width="2.5"/>
+                <path d="M72 95C72 90 82 85 100 85C118 85 128 90 128 95C128 102 118 105 100 105C82 105 72 102 72 95Z" fill="#0284c7" opacity="0.8"/>
+                <line x1="100" y1="85" x2="100" y2="105" stroke="#7dd3fc" stroke-width="1.5"/>
+                <circle cx="85" cy="95" r="3" fill="#ffffff"/>
+                <circle cx="115" cy="95" r="3" fill="#ffffff"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="brand-banner__info">
+            <span class="brand-banner__tag">THE BEST BRANDS</span>
+            <h2 class="brand-banner__title">THE LATEST TECHNOLOGY.</h2>
+            <p class="brand-banner__sub">Shop trusted technology from leading global brands with authentic warranties.</p>
+            <div class="brand-banner__cta-group">
+              <a href="#products" class="btn btn--primary btn--pill">
+                <span>Explore Brands</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#contact" class="btn btn--outline btn--pill">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="brand-banner__logos-grid">
+            <!-- Dell -->
+            <div class="brand-logo-item" title="DELL Technologies">
+              <span class="brand-logo-text font-dell">DELL</span>
+            </div>
+            <!-- HP -->
+            <div class="brand-logo-item" title="HP Inc.">
+              <span class="brand-logo-text font-hp">hp</span>
+            </div>
+            <!-- ASUS -->
+            <div class="brand-logo-item" title="ASUS">
+              <span class="brand-logo-text font-asus">ASUS</span>
+            </div>
+            <!-- Lenovo -->
+            <div class="brand-logo-item" title="Lenovo">
+              <span class="brand-logo-text font-lenovo">Lenovo</span>
+            </div>
+            <!-- AMD -->
+            <div class="brand-logo-item" title="AMD">
+              <span class="brand-logo-text font-amd">AMD</span>
+            </div>
+            <!-- Intel -->
+            <div class="brand-logo-item" title="Intel">
+              <span class="brand-logo-text font-intel">intel</span>
+            </div>
+            <!-- NVIDIA -->
+            <div class="brand-logo-item" title="NVIDIA">
+              <span class="brand-logo-text font-nvidia">NVIDIA</span>
+            </div>
+            <!-- TP-Link -->
+            <div class="brand-logo-item" title="TP-Link">
+              <span class="brand-logo-text font-tplink">tp-link</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SERVICES SECTION (8 Services)                                     -->
+    <!-- ================================================================= -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">EXPERT SOLUTIONS</span>
+          <h2 class="section__title">COMPLETE TECHNOLOGY SERVICES.</h2>
+          <p class="section__subtitle">From custom performance builds to component-level hardware repair.</p>
+        </header>
+
+        <div class="services-grid">
+          <!-- 1. Computer Sales -->
+          <article class="service-box reveal">
+            <div class="service-box__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Computer Sales</h3>
+            <p>Premium customized rigs, certified business workstations, and desktop setups tailored to your budget and performance demands.</p>
+            <div class="service-box__arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+          </article>
+
+          <!-- 2. Laptop Sales -->
+          <article class="service-box reveal" data-delay="1">
+            <div class="service-box__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg>
+            </div>
+            <h3>Laptop Sales</h3>
+            <p>Brand new ultrabooks, creator laptops, and high-FPS gaming portables from leading global manufacturers with local warranty.</p>
+            <div class="service-box__arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+          </article>
+
+          <!-- 3. Computer Repair -->
+          <article class="service-box reveal" data-delay="2">
+            <div class="service-box__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Computer Repair</h3>
+            <p>Comprehensive diagnostic bench testing, power supply repairs, thermal management, liquid cooling servicing, and BIOS restoration.</p>
+            <div class="service-box__arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+          </article>
+
+          <!-- 4. Laptop Repair -->
+          <article class="service-box reveal" data-delay="3">
+            <div class="service-box__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3>Laptop Repair</h3>
+            <p>Screen replacements, hinge rebuilding, battery replacements, keyboard restorations, and micro-soldering motherboard fixes.</p>
+            <div class="service-box__arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+          </article>
+
+          <!-- 5. Hardware Upgrades -->
+          <article class="service-box reveal">
+            <div class="service-box__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            </div>
+            <h3>Hardware Upgrades</h3>
+            <p>Expand DDR4/DDR5 memory, NVMe SSD speed boosts, modern GPU upgrades, and power supply overhauls to revitalize existing setups.</p>
+            <div class="service-box__arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+          </article>
+
+          <!-- 6. Networking Solutions -->
+          <article class="service-box reveal" data-delay="1">
+            <div class="service-box__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Networking Solutions</h3>
+            <p>Office and residence structured cabling, Wi-Fi mesh coverage design, managed switches, router configurations, and secured networks.</p>
+            <div class="service-box__arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+          </article>
+
+          <!-- 7. Printer Solutions -->
+          <article class="service-box reveal" data-delay="2">
+            <div class="service-box__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            </div>
+            <h3>Printer Solutions</h3>
+            <p>Laser and inkjet maintenance, toner cartridge refilling, printhead cleaning, wireless network sharing, and office fleet supply.</p>
+            <div class="service-box__arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+          </article>
+
+          <!-- 8. IT Support -->
+          <article class="service-box reveal" data-delay="3">
+            <div class="service-box__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <h3>IT Support</h3>
+            <p>Dedicated on-site and remote IT troubleshooting for companies in Dire Dawa, ensuring zero business downtime and robust cybersecurity.</p>
+            <div class="service-box__arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- WHY NATI SECTION                                                  -->
+    <!-- ================================================================= -->
+    <section class="section why-section" id="why">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">WHY CHOOSE US</span>
+          <h2 class="section__title">YOUR TECHNOLOGY PARTNER IN <span class="text-cyan">DIRE DAWA.</span></h2>
+        </header>
+
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-card__num">01</div>
+            <h3>QUALITY</h3>
+            <p>We source authentic, factory-inspected components and equipment from globally recognized manufacturers. Zero compromises on hardware integrity.</p>
+          </div>
+
+          <div class="why-card reveal" data-delay="1">
+            <div class="why-card__num">02</div>
+            <h3>EXPERTISE</h3>
+            <p>Our certified technicians possess deep engineering experience in system architectures, motherboard diagnostics, and advanced custom builds.</p>
+          </div>
+
+          <div class="why-card reveal" data-delay="2">
+            <div class="why-card__num">03</div>
+            <h3>RELIABILITY</h3>
+            <p>Serving Dire Dawa with transparent pricing, honest turnaround estimates, and solid warranties that give you total peace of mind.</p>
+          </div>
+
+          <div class="why-card reveal" data-delay="3">
+            <div class="why-card__num">04</div>
+            <h3>SUPPORT</h3>
+            <p>We build lasting relationships. From post-purchase optimizations to emergency technical assistance, our local team is always available.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- ABOUT SECTION                                                     -->
+    <!-- ================================================================= -->
+    <section class="section about-section" id="about">
+      <div class="container about__layout">
+        <div class="about__narrative reveal">
+          <span class="section__eyebrow">OUR HERITAGE</span>
+          <h2 class="section__title">POWERING YOUR <span class="text-cyan">DIGITAL WORLD.</span></h2>
+          <p class="about__lead">
+            NATI COMPUTER was founded with a singular ambition: to provide Dire Dawa and the wider region with world-class computing technology, uncompromising service, and professional IT solutions.
+          </p>
+          <p class="about__sub">
+            Whether you are a competitive gamer seeking maximum framerates, an architectural designer demanding workstation stability, or a business striving for secure network operations, we bring the global standard of technology directly to your fingertips.
+          </p>
+
+          <div class="about__stats-grid">
+            <div class="about__stat-item">
+              <span class="about__stat-value" data-target="100" data-suffix="%">0%</span>
+              <span class="about__stat-label">QUALITY</span>
+            </div>
+            <div class="about__stat-item">
+              <span class="about__stat-value" data-target="100" data-suffix="%">0%</span>
+              <span class="about__stat-label">EXPERTISE</span>
+            </div>
+            <div class="about__stat-item">
+              <span class="about__stat-value" data-target="100" data-suffix="%">0%</span>
+              <span class="about__stat-label">RELIABILITY</span>
+            </div>
+            <div class="about__stat-item">
+              <span class="about__stat-value" data-target="24" data-suffix="/7">0/7</span>
+              <span class="about__stat-label">SUPPORT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__banner-card reveal" data-delay="1">
+          <div class="about__banner-visual">
+            <img src="/assets/hero_setup.jpg" alt="NATI COMPUTER laboratory and showroom" class="about__banner-img" loading="lazy" />
+            <div class="about__banner-overlay"></div>
+          </div>
+          <div class="about__banner-badge">
+            <span class="about__badge-brand">NATI COMPUTER</span>
+            <span class="about__badge-loc">DIRE DAWA HUB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- LOCATION SECTION                                                  -->
+    <!-- ================================================================= -->
+    <section class="section location-section" id="location">
+      <div class="container location__layout">
+        <div class="location__info-col reveal">
+          <span class="section__eyebrow">VISIT OUR STORE</span>
+          <h2 class="section__title">DIRE DAWA, <span class="text-cyan">ETHIOPIA.</span></h2>
+          <p class="location__lead-brand">NATI COMPUTER HQ</p>
+          <p class="location__sub-brand">Your Local Technology Partner in the Eastern Hub.</p>
+
+          <div class="location__contact-cards">
+            <div class="contact-card">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-card__content">
+                <strong>Address</strong>
+                <span>Kezira Commercial Avenue, Dire Dawa, Ethiopia</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-card__content">
+                <strong>Phone</strong>
+                <a href="tel:+251911000000">+251 911 000 000</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-card__content">
+                <strong>Email</strong>
+                <a href="mailto:info@naticomputer.et">info@naticomputer.et</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="contact-card__content">
+                <strong>Opening Hours</strong>
+                <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn--primary btn--pill">GET IN TOUCH</a>
+        </div>
+
+        <!-- Futuristic Interactive Map Card -->
+        <div class="location__map-col reveal" data-delay="1">
+          <div class="map-card">
+            <svg viewBox="0 0 600 450" class="map-svg" preserveAspectRatio="xMidYMid slice" aria-label="Futuristic map pointing to Dire Dawa">
+              <defs>
+                <pattern id="map-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+                  <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#0ea5e9" stroke-opacity="0.08" stroke-width="0.75"/>
+                </pattern>
+                <radialGradient id="beacon-glow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+                  <stop offset="60%" stop-color="#0ea5e9" stop-opacity="0.2"/>
+                  <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <rect width="600" height="450" fill="#07070b"/>
+              <rect width="600" height="450" fill="url(#map-grid)"/>
+
+              <path d="M80,240 Q180,140 320,200 T540,160" fill="none" stroke="#0ea5e9" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="4,4"/>
+              <path d="M50,330 Q240,280 340,310 T560,280" fill="none" stroke="#0ea5e9" stroke-opacity="0.18" stroke-width="1.5"/>
+              <path d="M320,60 L320,380" fill="none" stroke="#38bdf8" stroke-opacity="0.12" stroke-width="1"/>
+
+              <circle cx="340" cy="225" r="90" fill="url(#beacon-glow)"/>
+              <circle cx="340" cy="225" r="50" fill="none" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1.5" class="beacon-ripple-2"/>
+              <circle cx="340" cy="225" r="28" fill="none" stroke="#0ea5e9" stroke-opacity="0.6" stroke-width="1.5" class="beacon-ripple-1"/>
+              <circle cx="340" cy="225" r="8" fill="#38bdf8"/>
+              <circle cx="340" cy="225" r="3" fill="#ffffff"/>
+
+              <g transform="translate(340, 225)">
+                <path d="M -18,-18 L -8,-18 M -18,-18 L -18,-8" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+                <path d="M 18,-18 L 8,-18 M 18,-18 L 18,-8" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+                <path d="M -18,18 L -8,18 M -18,18 L -18,8" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+                <path d="M 18,18 L 8,18 M 18,18 L 18,8" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+              </g>
+
+              <text x="340" y="270" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700" letter-spacing="2" font-family="'Syne', sans-serif">NATI COMPUTER</text>
+              <text x="340" y="288" text-anchor="middle" fill="#38bdf8" font-size="11" letter-spacing="1.5" font-family="'Inter', sans-serif">9.5931° N, 41.8661° E · DIRE DAWA</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- FINAL CTA BANNER (Ready To Step Into The Future?)                 -->
+    <!-- ================================================================= -->
+    <section class="section cta-final" id="contact">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="cta-banner__glow-line" aria-hidden="true"></div>
+          
+          <div class="cta-banner__content">
+            <span class="cta-banner__eyebrow">READY?</span>
+            <h2 class="cta-banner__title">READY TO STEP INTO THE FUTURE?</h2>
+            <p class="cta-banner__desc">Discover the technology built for what's next.</p>
+            <div class="cta-banner__cta-group">
+              <a href="#products" class="btn btn--primary btn--pill">EXPLORE PRODUCTS</a>
+              <a href="tel:+251911000000" class="btn btn--outline btn--pill">CONTACT US</a>
+            </div>
+          </div>
+
+          <!-- Futuristic Floating Laptop with Energy Trail -->
+          <div class="cta-banner__visual" aria-hidden="true">
+            <img src="/assets/laptop.png" alt="Futuristic Ultrabook" class="cta-banner__laptop-img" loading="lazy" />
+            <div class="cta-banner__energy-wave"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================================= -->
+  <!-- 5-COLUMN FOOTER                                                   -->
+  <!-- ================================================================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <!-- Col 1: Brand & Socials -->
+      <div class="footer__brand-col">
+        <a href="#hero" class="nav__logo" aria-label="NATI COMPUTER Home">
+          <span class="nav__logo-icon">
+            <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
+              <rect width="36" height="36" rx="9" fill="#0b1329" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1.2"/>
+              <path d="M9 27V9L21 27V9" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15 9L27 27" stroke="#0ea5e9" stroke-width="3.5" stroke-linecap="round" />
+            </svg>
+          </span>
+          <div class="nav__logo-text">
+            <span class="nav__logo-brand">NATI</span>
+            <span class="nav__logo-sub">COMPUTER</span>
+          </div>
+        </a>
+        <p class="footer__desc">
+          Dire Dawa, Ethiopia<br/>
+          Technology for What's Next.
+        </p>
+        <div class="footer__socials">
+          <!-- Facebook -->
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <!-- X / Twitter -->
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer__links-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#portal">Portal</a></li>
+          <li><a href="#categories">Overview</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Nati</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Categories -->
+      <div class="footer__links-col">
+        <h4>Product Categories</h4>
+        <ul>
+          <li><a href="#categories">Computers</a></li>
+          <li><a href="#categories">Laptops</a></li>
+          <li><a href="#categories">Gaming</a></li>
+          <li><a href="#categories">Monitors</a></li>
+          <li><a href="#categories">Accessories</a></li>
+          <li><a href="#categories">Networking</a></li>
+          <li><a href="#categories">Printers</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Services -->
+      <div class="footer__links-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Computer Sales</a></li>
+          <li><a href="#services">Laptop Sales</a></li>
+          <li><a href="#services">Computer Repair</a></li>
+          <li><a href="#services">Laptop Repair</a></li>
+          <li><a href="#services">Hardware Upgrades</a></li>
+          <li><a href="#services">Networking Solutions</a></li>
+          <li><a href="#services">IT Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 5: Contact Info -->
+      <div class="footer__links-col">
+        <h4>Contact Info</h4>
+        <div class="footer__contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+251911000000">+251 911 000 000</a>
+        </div>
+        <div class="footer__contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:info@naticomputer.et">info@naticomputer.et</a>
+        </div>
+        <div class="footer__contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Dire Dawa, Ethiopia</span>
+        </div>
+        <div class="footer__contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer__bottom container">
+      <p>&copy; 2026 Nati Computer. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="#privacy">Privacy Policy</a>
+        <span>·</span>
+        <a href="#terms">Terms of Service</a>
+      </div>
+      <!-- Circular Back to Top Button -->
+      <button class="footer__back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ================================================================= -->
+  <!-- MODALS: SHOPPING CART DRAWER, SEARCH MODAL, QUICK VIEW MODAL      -->
+  <!-- ================================================================= -->
+
+  <!-- 1. Interactive Shopping Cart Drawer -->
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Cart">
+    <div class="cart-drawer__header">
+      <div class="cart-drawer__title-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <h3>Your Cart</h3>
+      </div>
+      <button class="modal-close-btn" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+
+    <div class="cart-drawer__body" id="cart-items">
+      <!-- Populated via WebsiteSections.js -->
+    </div>
+
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__subtotal-row">
+        <span>Subtotal</span>
+        <strong id="cart-subtotal">ETB 0</strong>
+      </div>
+      <button class="btn btn--primary btn--full" id="cart-checkout">Proceed to Checkout</button>
+      <p class="cart-drawer__note">Direct local pickup and door delivery available in Dire Dawa.</p>
+    </div>
+  </aside>
+
+  <!-- 2. Live Search Modal Overlay -->
+  <div class="search-overlay" id="search-overlay" aria-hidden="true"></div>
+  <div class="search-modal" id="search-modal" role="dialog" aria-modal="true" aria-label="Site Search">
+    <div class="search-modal__inner">
+      <div class="search-modal__header">
+        <div class="search-modal__input-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="search-input" placeholder="Search laptops, computers, monitors, services..." autocomplete="off" />
+        </div>
+        <button class="modal-close-btn" id="search-close" aria-label="Close search">&times;</button>
+      </div>
+      <div class="search-modal__results" id="search-results">
+        <!-- Live search results rendered here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Product Quick View Modal -->
+  <div class="quickview-overlay" id="quickview-overlay" aria-hidden="true"></div>
+  <div class="quickview-modal" id="quickview-modal" role="dialog" aria-modal="true" aria-label="Product Details">
+    <div class="quickview-modal__card">
+      <button class="modal-close-btn" id="quickview-close" aria-label="Close product view">&times;</button>
+      <div class="quickview-modal__grid">
+        <div class="quickview-modal__img-wrap">
+          <img id="quickview-img" src="/assets/dell_optiplex.jpg" alt="Product details visual" />
+        </div>
+        <div class="quickview-modal__details">
+          <span id="quickview-badge" class="product-badge product-badge--cyan">New</span>
+          <h3 id="quickview-title" class="quickview-modal__title">Product Name</h3>
+          <div id="quickview-category" class="quickview-modal__cat">Category</div>
+          <div id="quickview-price" class="quickview-modal__price">ETB 0</div>
+          <p id="quickview-desc" class="quickview-modal__desc">Description...</p>
+          <div class="quickview-modal__specs-box">
+            <strong>Technical Specifications:</strong>
+            <p id="quickview-specs"></p>
+          </div>
+          <button id="quickview-add-to-cart" class="btn btn--primary btn--full">Add to Shopping Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
