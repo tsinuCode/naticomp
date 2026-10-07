@@ -369,20 +369,7 @@ export class ContinuousCinematicHero {
       this.canvas.style.visibility = canvasOpacity <= 0 ? 'hidden' : 'visible';
     }
 
-    // 3. Highlight portal in navigation when active
-    const portalNavLink = document.getElementById('nav-link-portal');
-    const homeNavLink = document.querySelector('.nav__links a[href="#hero"]');
-    if (portalNavLink && homeNavLink) {
-      if (progress >= 0.08 && progress <= 0.94) {
-        portalNavLink.classList.add('is-active');
-        homeNavLink.classList.remove('is-active');
-      } else if (progress < 0.08) {
-        portalNavLink.classList.remove('is-active');
-        homeNavLink.classList.add('is-active');
-      }
-    }
-
-    // 4. Request animation frame for canvas render
+    // 3. Request animation frame for canvas render
     this._requestRender();
   }
 

@@ -137,13 +137,14 @@ export class WebsiteSections {
     const navLinks = document.querySelectorAll('.nav__links a');
     const sections = [
       { id: 'hero', selector: '#hero' },
-      { id: 'categories', selector: '#categories' },
+      { id: 'hero', selector: '#features' },
+      { id: 'hero', selector: '#categories' },
       { id: 'products', selector: '#products' },
-      { id: 'brands', selector: '#brands' },
+      { id: 'products', selector: '#brands' },
       { id: 'services', selector: '#services' },
-      { id: 'why', selector: '#why' },
+      { id: 'about', selector: '#why' },
       { id: 'about', selector: '#about' },
-      { id: 'location', selector: '#location' },
+      { id: 'about', selector: '#location' },
       { id: 'contact', selector: '#contact' },
     ];
 
